@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "5c5dd12a-7b26-4c18-b4bd-c9c268787c00",
+		"name": "BlogAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27777809"
+	},
+	"item": [
+		{
+			"name": "GetAllBlogPost",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7028/api/BlogPost",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7028",
+					"path": [
+						"api",
+						"BlogPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBlogPostById",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7028/api/BlogPost/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7028",
+					"path": [
+						"api",
+						"BlogPost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAllBlogPost",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"content\": \"string\",\r\n  \"createdAt\": \"2024-02-10T11:57:02.327Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7028/api/BlogPost",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7028",
+					"path": [
+						"api",
+						"BlogPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditAllBlogPost",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"content\": \"string\",\r\n  \"createdAt\": \"2024-02-10T11:57:02.327Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7028/api/BlogPost/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7028",
+					"path": [
+						"api",
+						"BlogPost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

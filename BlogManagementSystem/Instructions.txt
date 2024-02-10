@@ -1,0 +1,9 @@
+﻿for run the sysyem
+
+1- edit the connection string of database in appsettings.json file of key "dbConnection" .
+
+2- when you run the api the system yoll create the database and table from migration the exist in migration folder .
+
+3- for login using Basic Authorization UserName =admin , password=admin to access the data
+
+4- the api test requests using postman included folder have collection Of requests file "BlogAPI.postman_collection"
